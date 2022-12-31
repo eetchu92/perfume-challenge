@@ -1,0 +1,119 @@
+* {
+    /*margin: 0;*/
+    /*padding: 0;*/
+    box-sizing: border-box;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    background: #FBF2F8;
+}
+
+.container {
+    display: flex;
+    margin: 10% 30%;
+}
+
+/*working on the image*/
+
+img {
+    border-radius: 15px 0 0 15px;
+    cursor: pointer;
+}
+
+/* Working on the body */
+
+.body {
+    background: white;
+    height: 400px;
+    width: 300px;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+}
+/* Getting the individual elements*/
+
+h3 {
+    position: relative;
+    left: 7%;
+    top: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: .8rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #646767;
+}
+h1 {
+    position: relative;
+    left: 7%;
+    line-height: 90%;
+}
+p {
+    position: relative;
+    left: 7%;
+    color: #646767;
+    font-size: 1rem;
+    line-height: 130%;
+}
+button {
+    position: relative;
+    left: 7%;
+    /*top: 10px;*/
+    width: 12.5rem;
+    padding: 8px 0;
+    border-radius: 5px;
+    background: #0E4F0A;
+    color: white;
+    border-color: #0E4F0A;
+    cursor: pointer;
+}
+/* Working on the price*/
+
+.price  {
+    display: flex;
+    margin-top: 10px;
+}
+
+.price h1 {
+    color: #15870E;
+    font-family: Luminari, fantasy;
+}
+
+.price p {
+    font-size: .75rem;
+    text-decoration: line-through;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+/* Styling the font awesome icon */
+
+.fa-solid {
+    margin-left: 15px;
+}
+
+@media all and (max-width: 750px) {
+    
+    img {
+        height: 200px;
+        width: 275px;
+        background-image: url(image-product-mobile.jpg);
+        border-radius: 15px 15px 0 0;
+        background-position: center;
+        margin-bottom: 0;
+        
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body {
+        border-radius: 0 0 15px 15px;
+        margin-top: 0;
+        height: 400px;
+        width: 275px;
+    }
+    
+}
